@@ -2,9 +2,12 @@
 
 ## Setup project
 *Note:* Please check if all needed components Node.js, Ruby and some others already installed.
+
 More in [Enviroment setting on Windows OS] (./docs/enviroment-settings.md)
 
+
 In project root folder
+
     `npm install`
     `bower install`
     `grunt build:dev` - to copy vendors libraries to dev environment and to build project for development

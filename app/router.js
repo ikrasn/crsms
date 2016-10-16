@@ -219,9 +219,9 @@ define(function(require) {
             if (this.containerView.getView(".sidebar-a")) {
                 this.containerView.getView(".sidebar-a").remove();
             }
-            var type, name, instance, child, idParent, collection, editView, subItems, listPath,
+            var type, name, instance, child, collection, editView, subItems, listPath,
                 rootPath = this.getCurrentRootPath();
-            
+
             switch (mainPage) {
                 case "areas":
                     type  = "list";

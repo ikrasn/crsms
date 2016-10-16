@@ -4,7 +4,7 @@ define(function(require) {
     require("jquery-serialize-object");
 
     var CMS = require("CMS"),
-        testModel = require("../models/managementModel"),
+        TestModel = require("../models/managementModel"),
 
     View = CMS.View.extend({
         el: false,
@@ -13,7 +13,7 @@ define(function(require) {
             'click #save_test': 'saveTestHandler'
         },
 
-        initialize: function(options) { 
+        initialize: function(options) {
             this.type = options.type;
             this.idParent = options.idParent;
             this.listenTo(this.model, "invalid", this.errorMessage);
@@ -27,14 +27,15 @@ define(function(require) {
         saveTestHandler: function() {
             this.$el.find("#test_name").removeClass("error");
             this.$el.find("#test_name").popover("destroy");
-            var _this = this;
+            var _this = this,
+                newTest;
             var serialized = this.$el.serializeObject();
             if(this.type == "addNewInstance"){
-                var newTest = new testModel();
+                newTest = new TestModel();
                 newTest.urlRoot = CMS.api + "modules/" + this.idParent + "/tests";
             }
             else {
-                var newTest = this.model;
+                newTest = this.model;
             }
             newTest.set(serialized, {validate: true});
             if(!newTest.validationError) {

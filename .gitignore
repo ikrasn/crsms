@@ -1,6 +1,8 @@
 node_modules
 .sass-cache
 .tmp
+database
+server/gmail.js
 build
 vendor
 app/assets/css

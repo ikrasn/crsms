@@ -8,6 +8,7 @@
 3 | grunt | Grunt is a collector for frontend developer (we install node.js+npm because we have choose use Grunt!)
 4 | git | In such program environment Git is needed to work with bower and to team development generally.
 5 | bower | For installing bower to be sure npm and git are installed.
+6 | mongoDB | Database for BE
 
 ### 1. Install ruby&sass(scss)
 
@@ -103,7 +104,18 @@ Check installation through any cmd:
 > Attention!
 > Check git path in environment variables: Computer -> Properties -> Additional system parameters -> Enviroment variables: >add something like C:\Program Files (x86)\Git\bin to system variables
 
-### 6. NPM Install issues
+### 6. MongoDB
+
+6.1 Download [MongoDB] (http://www.mongodb.org/downloads) and install
+
+6.2 Set up the MongoDB environment
+https://docs.mongodb.com/getting-started/shell/tutorial/install-mongodb-on-windows/#run-mongodb-community-edition
+
+`~path_to_mongo_db/mongod.exe --dbpath ~path_to_project_root\database\`
+*NOTE:* create directory in project root database
+
+
+### 7. NPM Install issues
 
 In case of errors
 

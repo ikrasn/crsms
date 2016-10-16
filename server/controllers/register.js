@@ -6,14 +6,13 @@ var express = require("express"),
     Profile = require("../models/profile"),
     jwt = require("jsonwebtoken"),
     nodemailer = require("nodemailer"),
+    transporter,
+    gmail_auth_cred = require("../gmail.js");
 
-    transporter = nodemailer.createTransport("SMTP", {
-      service: 'Gmail',
-      auth: {
-        user: "ssita.cms@gmail.com", 
-        pass: "ssita_cms"
-      }
-    });
+transporter = nodemailer.createTransport("SMTP", {
+    service: 'Gmail',
+    auth: gmail_auth_cred
+});
 
 router.post("/", function(req, res, next) {
         var data = {

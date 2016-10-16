@@ -7,14 +7,13 @@ var express = require( "express" ),
     jwt = require("jsonwebtoken"),
     async = require("async"),
     nodemailer = require("nodemailer"),
+    transporter,
+    gmail_auth_cred = require("../gmail.js");
 
-    transporter = nodemailer.createTransport("SMTP", {
-      service: 'Gmail',
-      auth: {
-        user: "ssita.cms@gmail.com", 
-        pass: "ssita_cms"
-      }
-    });
+transporter = nodemailer.createTransport("SMTP", {
+  service: 'Gmail',
+  auth: gmail_auth_cred
+});
 
 router.post("/", function (req, res, next) {
   User.findOne({email: req.body.email}, function (err, user) {
@@ -57,7 +56,7 @@ router.get("/", function (req, res, next) {
             var message = {
               from: "Softserve ITA <ssita.cms@gmail.com>",
               to: user.email,
-              subject: "Новий пароль", 
+              subject: "Новий пароль",
               text: "Привіт " + user.name + "! Ваш новий пароль: " + user.password
             };
             transporter.sendMail(message, function (err, res) {

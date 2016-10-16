@@ -19,3 +19,6 @@ In project root folder
 
     `grunt build:prod` - to build production version of project
     `grunt server:prod` - to run local server on port 8834 (http://localhost:8834) with livereload for development
+
+    `cd server` - go to server directory
+    `node server` - run BE server

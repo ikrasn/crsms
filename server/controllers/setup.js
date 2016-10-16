@@ -172,14 +172,14 @@ router.get("/", function(req, res) {
     ReportForm2.save();
 
     var user1 = new User({
-        "email": "buispr@gmail.com",
-        "name": "Sergiy",
-        "surname": "Diak",
-        "password": "Diak540910",
+        "email": "user1@gmail.com",
+        "name": "Name",
+        "surname": "LastName",
+        "password": "test123",
         "isConfirmed": true,
         "role": 2
     });
-    
+
     var profile = new UserProfile({
         email: user1.email,
         name: user1.name,
@@ -572,7 +572,7 @@ router.get("/", function(req, res) {
         type: "video",
         name: "Модуль 1. Відео.",
         url: "https://www.youtube.com/embed/LICSA6iJd6w",
-    });    
+    });
     var resource2 = new Resource({
         type: "zip",
         name: "Модуль 1. Конспект. Частина 1.",
@@ -583,7 +583,7 @@ router.get("/", function(req, res) {
         name: "Модуль 1. Конспект. Частина 2.",
         url: "/web-resources/forms.zip",
     });
-    
+
     resource1.save();
     resource2.save();
     resource3.save();
@@ -673,7 +673,7 @@ router.get("/", function(req, res) {
     var unpublish_date = new Date();
     unpublish_date.setDate(unpublish_date.getDate()-3);
 
-    var course1 = new Course({ 
+    var course1 = new Course({
         name: "HTML",
         description: "Даний курс складається з п'яти модулів та екзаменаційного завдання. Кожен модуль містить посилання на матеріали відеохарактеру та допоміжну інформацію. Курс буде цікавий студентам, які хотіли б оволодіти мистецтвом розробки веб-ресурсів згідно нових тенденцій дизайну",
         startDate: "2015-10-06",
@@ -685,8 +685,8 @@ router.get("/", function(req, res) {
         area: ui,
         groups: [early, evening],
         _modules: [module11._id, module12._id, module13._id]
-    });  
-    var course2 = new Course({ 
+    });
+    var course2 = new Course({
         name: "Flat UI",
         description: "Даний курс вивчає мінімалістичний підхід до дизайну об'єктів, який підкреслює зручність використання, більшою мірою орієнтований на кінцевого користувача. Курс буде цікавий студентам, які хотіли б оволодіти мистецтвом розробки веб-ресурсів згідно нових тенденцій дизайну",
         startDate: "2015-9-16",
@@ -700,8 +700,8 @@ router.get("/", function(req, res) {
         groups: [early, evening],
         _modules: [module1._id, module2._id]
     });
-    
-    var course3 = new Course({ 
+
+    var course3 = new Course({
         name: "CSS",
         description: "Будуть розглянуті сучасні можливості каскадних таблиць стилів і їхню підтримку востанніх популярних браузерах",
         startDate: "2015-8-26",
@@ -714,8 +714,8 @@ router.get("/", function(req, res) {
         area: ui,
         groups: [early, daily],
         _modules: [module1._id, module2._id]
-    });  
-    var course4 = new Course({ 
+    });
+    var course4 = new Course({
         name: "JAVA",
         description: "Даний курс складається з п'яти модулів та екзаменаційного завдання. Кожен модуль містить посилання на матеріали відеохарактеру та допоміжну інформацію. Курс буде цікавий студентам, які хотіли б оволодіти мистецтвом розробки веб-ресурсів згідно нових тенденцій дизайну",
         startDate: "2015-10-26",
@@ -727,8 +727,8 @@ router.get("/", function(req, res) {
         area: java,
         groups: [daily, evening],
         _modules: [module1._id, module2._id]
-    });  
-    var course5 = new Course({ 
+    });
+    var course5 = new Course({
         name: ".Net",
         description: "У Вас буде можливість вивчити технології та підходи до розробки Web-програм з багаторівневою архітектурою. Ви отримаєте досвід побудови Web-програм засобами AStest1.NET MVC, Silverlight, побудови десктопних програм засобами WPF, реалізацію ORM засобами ADO.NET Entity, а також розробки Web-сервісів з допомогою WСF.",
         startDate: "2015-10-01",
@@ -740,7 +740,7 @@ router.get("/", function(req, res) {
         area: net,
         groups: [early, evening],
         _modules: [module1._id, module2._id]
-    });  
+    });
 
     course1.save(function(err) {
         if (err) throw err;
@@ -796,7 +796,7 @@ router.get("/", function(req, res) {
     });
     course5.save(function(err) {
         if (err) throw err;
-    }); 
+    });
 
     mainMenu._menuLinks.push(mainMenuLink1._id, mainMenuLink2._id, mainMenuLink3._id);
     profileMenu._menuLinks.push(profileMenuLink1._id, profileMenuLink2._id);

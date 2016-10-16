@@ -105,8 +105,11 @@ Check installation through any cmd:
 
 ### 6. NPM Install issues
 
-In case of errors `npm cache clean` and `npm update -g` fix problems
+In case of errors
 
 ![alt text](./src/img/npm_i_1.png "")
+
+
+Run `npm cache clean` and `npm update -g` to fix problems
 
 ![alt text](./src/img/npm_i_2.png "")

@@ -1,4 +1,4 @@
-#Course Managment System or CRSMS
+#Course Managment System or CrsMS
 
 ## Setup project
 *Note:* Please check if all needed components Node.js, Ruby and some others already installed.

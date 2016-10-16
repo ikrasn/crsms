@@ -1,6 +1,6 @@
 module.exports = function(grunt ) {
     "use strict";
-    
+
     var serveStatic = require('serve-static');
     var connect = require('connect');
 
@@ -37,7 +37,7 @@ module.exports = function(grunt ) {
 
         copy: {
             html: {
-                files: 
+                files:
                     [{expand: true, src: ['app/index.html'], flatten: true, dest: 'build/'}]
             },
 
@@ -113,7 +113,6 @@ module.exports = function(grunt ) {
               options: {
                 livereload: true,
                 port: 8034,
-                //base: 'app',
                 middleware: function(connect) {
                     return [
                         serveStatic('.tmp'),
@@ -131,7 +130,6 @@ module.exports = function(grunt ) {
               options: {
                 livereload: true,
                 port: 8834,
-                //base: 'app',
                 middleware: function(connect) {
                     return [
                         serveStatic('build')
@@ -183,7 +181,6 @@ module.exports = function(grunt ) {
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-trimtrailingspaces');
-
 
     grunt.registerTask('build:dev', ['lodash:build','jshint:dev', 'sass']);
     grunt.registerTask('build:prod', ['clean', 'jshint:dev', 'sass:prod', 'autoprefixer', 'copy:images', 'bowercopy', 'processhtml', 'requirejs:compile']);

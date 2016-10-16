@@ -26,3 +26,7 @@ In project root folder
     `cd server` - go to server directory
     create server directory and log.log file in
     `node server` - run BE server
+
+    open `localhost:8888/api/setup` - to setup mock data
+
+    open demo course `http://localhost:8034/#courses/5803d5ebb7b622c010f170e1`

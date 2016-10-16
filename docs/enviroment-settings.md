@@ -102,3 +102,11 @@ Check installation through any cmd:
 
 > Attention!
 > Check git path in environment variables: Computer -> Properties -> Additional system parameters -> Enviroment variables: >add something like C:\Program Files (x86)\Git\bin to system variables
+
+### 6. NPM Install issues
+
+In case of errors `npm cache clean` and `npm update -g` fix problems
+
+![alt text](./src/img/npm_1.png "")
+
+![alt text](./src/img/npm_2.png "")

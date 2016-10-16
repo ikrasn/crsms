@@ -6,6 +6,7 @@ More in [Enviroment setting on Windows OS] (./docs/enviroment-settings.md)
 
 
 In project root folder
+
     `npm install` -install node modules
     `bower install` - install bower modules
 

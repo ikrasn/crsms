@@ -6,29 +6,33 @@
 1 | *ruby&sass* | Install ruby with ruby package manager gem for install sass via gem on the next step.
 2 | node.js | Node package manager npm is installed automatically together with node.js. NPM is need to install all dependencies (grunt, json-server, lowdb etc) via package.json: npm install.
 3 | grunt | Grunt is a collector for frontend developer (we install node.js+npm because we have choose use Grunt!)
-4 | json-server | For installing json-server to be sure npm is installed.
 5 | git | In such program environment Git is needed to work with bower and to team development generally.
 6 | bower | For installing bower to be sure npm and git are installed.
 
 ### 1. Install ruby&sass(scss)
 
-1) Download [rubyinstaller] (http://rubyinstaller.org/downloads) and install (don’t forget about path!)
-![alt text](https://github.com/nromanen/Ch-034/blob/master/docs/src/img/ruby-path.png "Don't forget about ruby path")
+1.1 Download [rubyinstaller] (http://rubyinstaller.org/downloads) and install (don’t forget about path!)
+![alt text](./docs/src/img/ruby-path.png "Don't forget about ruby path")
 
 Check installation through Start Command Prompt with Ruby or any cmd:
 
 	ruby -v
 
-![alt text](https://github.com/nromanen/Ch-034/blob/master/docs/src/img/ruby-check.png "Checking ruby installing")
+![alt text](./docs/src/img/ruby-check.png "Checking ruby installing")
 
 > Uninstall: via windows control panel
 
-2) Install sass via ruby package manager gem:
+1.2 Install sass via ruby package manager gem:
 
 	gem install sass
 
 
-![alt text](https://github.com/nromanen/Ch-034/blob/master/docs/src/img/sass-check.png "Checking sass installing")
+*NOTE:* on Windows 7 may be error like
+`ERROR:  Could not find a valid gem 'sass' (>= 0), here is why:...`
+Fix:
+`gem sources -a http://rubygems.org/` then type `y` to confirm. Try again `gem install sass`
+
+![alt text](./docs/src/img/sass-check.png "Checking sass installing")
 
 Check installation through any cmd:
 
@@ -44,7 +48,7 @@ Check installation through any cmd:
 
 	node –v
 
- ![alt text](https://github.com/nromanen/Ch-034/blob/master/docs/src/img/node-check.png "Checking node.js installing")
+ ![alt text](./docs/src/img/node-check.png "Checking node.js installing")
 
 > Uninstall: via windows control panel, then check and remove the next folders
 >            C:\Program Files (x86)\Nodejs
@@ -65,7 +69,7 @@ Check installation through any cmd:
 
      grunt --help
 
-![alt text](https://github.com/nromanen/Ch-034/blob/master/docs/src/img/grunt-check.png "Checking grunt installing")
+![alt text](./docs/src/img/grunt-check.png "Checking grunt installing")
 
 > Uninstall: via cmd: npm uninstall –g grunt
 
@@ -107,12 +111,12 @@ Check installation through any cmd:
 
 	json-server -v
 
-![alt text](https://github.com/nromanen/Ch-034/blob/master/docs/src/img/json-server-check.png "Checking json-server installing")
+![alt text](./docs/src/img/json-server-check.png "Checking json-server installing")
 
 ### 5. Install Git
 
 1) Download [gitinstaller] (http://git-scm.com/download/win) and install (don’t forget about path!)
-![alt text](https://github.com/nromanen/Ch-034/blob/master/docs/src/img/git-install.png "Don't forget about git path")
+![alt text](./docs/src/img/git-install.png "Don't forget about git path")
 
 
 2) Config git:
@@ -131,7 +135,7 @@ Check installation through any cmd:
 
 	bower –v
 
-![alt text](https://github.com/nromanen/Ch-034/blob/master/docs/src/img/bower-check.png "Checking bower installing")
+![alt text](./docs/src/img/bower-check.png "Checking bower installing")
 
 Create bower.json in the project folder via cmd:
 

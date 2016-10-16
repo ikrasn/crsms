@@ -2,7 +2,6 @@
 
 ## Setup project
 *Note:* Please check if all needed components Node.js, Ruby and some others already installed.
-
 More in [Enviroment setting on Windows OS] (./docs/enviroment-settings.md)
 
 

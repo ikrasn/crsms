@@ -9,6 +9,7 @@ In project root folder
 
     `npm install` -install node modules
 > *NOTE:* in case of errors `npm cache clean` and `npm update -g` fix problems. More in [Enviroment setting on Windows OS] (./docs/enviroment-settings.md)
+
     `bower install` - install bower modules
 
 

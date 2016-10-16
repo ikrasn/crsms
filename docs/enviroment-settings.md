@@ -27,10 +27,13 @@ Check installation through Start Command Prompt with Ruby or any cmd:
 	gem install sass
 
 
-*NOTE:* on Windows 7 may be error like
-`ERROR:  Could not find a valid gem 'sass' (>= 0), here is why:...`
-Fix:
-`gem sources -a http://rubygems.org/` then type `y` to confirm. Try again `gem install sass`
+>*NOTE:* on Windows 7 may be error like
+>
+>`ERROR:  Could not find a valid gem 'sass' (>= 0), here is why:...`
+>
+>Fix:
+>
+>`gem sources -a http://rubygems.org/` then type `y` to confirm. Try again `gem install sass`
 
 ![alt text](./src/img/sass-check.png "Checking sass installing")
 

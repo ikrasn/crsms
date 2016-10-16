@@ -107,6 +107,6 @@ Check installation through any cmd:
 
 In case of errors `npm cache clean` and `npm update -g` fix problems
 
-![alt text](./src/img/npm_1.png "")
+![alt text](./src/img/npm_i_1.png "")
 
-![alt text](./src/img/npm_2.png "")
+![alt text](./src/img/npm_i_2.png "")

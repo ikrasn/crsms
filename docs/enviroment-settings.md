@@ -112,7 +112,7 @@ Check installation through any cmd:
 https://docs.mongodb.com/getting-started/shell/tutorial/install-mongodb-on-windows/#run-mongodb-community-edition
 
 `~path_to_mongo_db/mongod.exe --dbpath ~path_to_project_root\database\`
-*NOTE:* create directory in project root database
+*NOTE:* create directory in project root database before
 
 
 ### 7. NPM Install issues

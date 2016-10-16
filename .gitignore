@@ -10,4 +10,5 @@ app/assets/fonts
 app/styles/main.min.css
 app/styles/main.min.css.map
 server/log.log
+server/server/
 npm-debug.log

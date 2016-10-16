@@ -20,5 +20,9 @@ In project root folder
     `grunt build:prod` - to build production version of project
     `grunt server:prod` - to run local server on port 8834 (http://localhost:8834) with livereload for development
 
+    `~path_to_mongo_db/mongod.exe --dbpath ~path_to_project_root\database\`
+>*NOTE:* create directory in project root database before
+
     `cd server` - go to server directory
+    create server directory and log.log file in
     `node server` - run BE server

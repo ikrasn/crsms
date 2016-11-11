@@ -12,3 +12,4 @@ app/styles/main.min.css.map
 server/log.log
 server/server/
 npm-debug.log
+docs_private
